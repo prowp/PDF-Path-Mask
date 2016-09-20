@@ -12,12 +12,5 @@ require_once('taxonomies/pdf-category.php');
 	require_once dirname( __FILE__ ) . '/meta/init.php';
 }
 
-/* Pull Updates from Github */
-require_once('updater/plugin-update-checker.php');
-$pdf_mask_update_check = PucFactory::getLatestClassVersion('PucGitHubChecker');
-$pdf_mask_update = new $pdf_mask_update_check(
-    'https://github.com/prowp/PDF-Path-Mask',
-    __FILE__,
-    'master'
-);
+
 

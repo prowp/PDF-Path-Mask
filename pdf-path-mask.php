@@ -64,3 +64,12 @@ function masked_pdf_deactivation() {
 	
 	flush_rewrite_rules(true);
 }
+
+/* Pull Updates from Github */
+require_once('lib/updater/plugin-update-checker.php');
+$pdf_mask_update_check = PucFactory::getLatestClassVersion('PucGitHubChecker');
+$pdf_mask_update = new $pdf_mask_update_check(
+    'https://github.com/prowp/PDF-Path-Mask',
+    __FILE__,
+    'master'
+);

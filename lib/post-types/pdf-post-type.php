@@ -1,7 +1,5 @@
 <?php
 
-include('meta.php');
-include('layout.php');
 
 add_action('init', 'masked_pdf_post_type');
 
