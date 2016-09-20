@@ -2,7 +2,7 @@
 /*
   Plugin Name: PDF Path Mask
   Description: Adds a post type to WordPress that will mask your actual PDF Url
-  Version: 0.2
+  Version: 0.2.1
   Author: <a href="mailto:john@jsweb.solutions">John Russell</a> | <a href="http://www.jsweb.solutions">JS Web Solutions</a>
  */
  
@@ -53,7 +53,8 @@ register_activation_hook( __FILE__, 'masked_pdf_activate' );
 	function masked_pdf_activate() {
 		masked_pdf_post_type();
 		jsweb_create_pdf_taxonomies();
-		flush_rewrite_rules(true);
+		pdf_rewrite_rule();
+		flush_rewrite_rules();
 	}
 	
 /* Clean up Rewrite Rules */	

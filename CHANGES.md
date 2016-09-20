@@ -1,3 +1,6 @@
+0.2.1
+Fixed permalink activation issue
+
 0.2 
 Added updater
 fixed permalinks issue with ending slash
