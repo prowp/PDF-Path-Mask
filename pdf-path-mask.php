@@ -2,8 +2,8 @@
 /*
   Plugin Name: PDF Path Mask
   Description: Adds a post type to WordPress that will mask your actual PDF Url
-  Version: 0.2.1
   Author: <a href="mailto:john@jsweb.solutions">John Russell</a> | <a href="http://www.jsweb.solutions">JS Web Solutions</a>
+  Version: 0.2.1
  */
  
  define('PDF_MASK_URL', plugins_url('/',  __FILE__));
