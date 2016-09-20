@@ -1,5 +1,6 @@
 0.2.1
 Fixed permalink activation issue
+Fixed Updater Issues
 
 0.2 
 Added updater
