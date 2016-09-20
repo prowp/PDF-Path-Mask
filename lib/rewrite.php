@@ -13,8 +13,10 @@ function pdf_rewrite_rule() {
 }
 
 function append_pdf_to_url( $url, $post ) {
-    if ( 'pdf' == get_post_type( $post ) ) {
-        return $url . '.pdf';
+    if ( 'pdf' == get_post_type( $post ) ) {		
+        $url = $url . '.pdf';		
+		/* Filter for ending slash */
+		$url = str_replace('/.pdf', '.pdf', $url);
     }
     return $url;
 }
