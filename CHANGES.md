@@ -1,3 +1,9 @@
+0.2.3
+Added Shortcode for display list of PDF links by category
+
+0.2.2
+Removed Uncessary Files From Post Type Configuration
+
 0.2.1
 Fixed permalink activation issue
 Fixed Updater Issues

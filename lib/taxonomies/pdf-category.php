@@ -1,5 +1,7 @@
 <?php
 
+add_action('init', 'jsweb_create_pdf_taxonomies');
+
 function jsweb_create_pdf_taxonomies() {
 				$single_name = 'PDF Category';
                 $plural_name = 'PDF Categories';
@@ -7,7 +9,7 @@ function jsweb_create_pdf_taxonomies() {
 
 	$labels = array(
 		'name'              => _x( $plural_name, 'taxonomy general name' ),
-		'singular_name'     => _x($single_Name, 'taxonomy singular name' ),
+		'singular_name'     => _x($single_name, 'taxonomy singular name' ),
 		'search_items'      => __( 'Search ' . $plural_name ),
 		'all_items'         => __( 'All ' . $plural_name ),
 		'parent_item'       => __( 'Parent ' . $single_name ),
@@ -19,7 +21,7 @@ function jsweb_create_pdf_taxonomies() {
 		'menu_name'         => __( $single_name ),
 	);
 
-              $single_lower = strtolower($single);
+    $single_lower = strtolower($single_name);
 
 	$args = array(
 		'hierarchical'      => true,
