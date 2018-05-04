@@ -43,7 +43,7 @@ function pdf_cat_links($pdf_category) {
 	
 	foreach($pdf_array as $pa) {
 		$link_id = 'pdf-'.$pa->ID;
-		$content .= '<li><a id="'.$link_id.'" href="'.get_permalink($pa->ID).'">'.$pa->post_title.'</a>';
+		$content .= '<li><a id="'.$link_id.'" target="_blank" href="'.get_permalink($pa->ID).'">'.$pa->post_title.'</a>';
 	}
 	
 	$content .= '</ul></div>';

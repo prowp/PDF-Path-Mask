@@ -21,6 +21,7 @@ add_action('wp', 'single_pdf_layout');
 		global $post;
 		$url = get_post_meta($post->ID, '_pdf_upload', true);
 		if($url):
+		do_action('before_pdf_render');
 		masked_pdf_render($url);
 		endif;
 		endif;
