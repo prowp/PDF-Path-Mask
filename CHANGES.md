@@ -1,3 +1,7 @@
+0.3
+Added intercept before PDF rendering for membership/restricted content sites
+Changed rendering hook to template_redirect
+
 0.2.3
 Added Shortcode for display list of PDF links by category
 
