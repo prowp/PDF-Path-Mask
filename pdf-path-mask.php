@@ -53,26 +53,7 @@ add_action('template_redirect', 'single_pdf_layout');
 		
 	}
 
-	/* PDF Functions */
 		
-	function masked_pdf_render($url) {
-        $mm_type="application/pdf";
-
-        header("Pragma: public");
-		header("Expires: 0");
-		header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-		header("Cache-Control: public");
-		header("Content-Description: File Transfer");
-		header("Content-Type: " . $mm_type);
-		//header("Content-Length: " .(string)(filesize($url)) );
-		header('Content-Disposition: inline; filename="'.basename($url).'"');
-		header("Content-Transfer-Encoding: binary\n");
-
-		readfile($url); // outputs the content of the file
-
-        exit();
-		
-	}
 
 function jsweb_get_pdf_file_size( $url ) {
   // Assume failure.
