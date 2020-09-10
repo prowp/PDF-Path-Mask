@@ -53,12 +53,6 @@ add_action('template_redirect', 'single_pdf_layout');
 		
 	}
 
-<<<<<<< HEAD
-
-=======
-		
->>>>>>> origin/master
-
 function jsweb_get_pdf_file_size( $url ) {
   // Assume failure.
   $result = -1;
